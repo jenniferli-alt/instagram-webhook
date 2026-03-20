@@ -47,5 +47,14 @@ def callback():
     print("✅ Access Token：", token_data)
     return f"登入成功！Token: {token_data.get('access_token')}", 200
 
+@app.route('/privacy')
+def privacy():
+    return """
+    <h1>隱私政策</h1>
+    <p>本應用程式僅存取您授權的 Instagram 帳號資料，用於發布內容。</p>
+    <p>我們不會將您的資料分享給第三方。</p>
+    <p>如有疑問請聯絡：你的email@gmail.com</p>
+    """, 200
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
