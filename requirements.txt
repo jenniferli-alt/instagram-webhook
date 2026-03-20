@@ -1,4 +1,2 @@
-點 **Add file → Create new file**，檔名填 `requirements.txt`，內容：
-```
 flask
 gunicorn
