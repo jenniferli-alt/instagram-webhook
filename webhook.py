@@ -25,15 +25,3 @@ def receive():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
-```
-
-貼完後點下方 **Commit changes** → **Commit changes**
-
----
-
-**第二個檔案：`requirements.txt`**
-
-點 **Add file → Create new file**，檔名填 `requirements.txt`，內容：
-```
-flask
-gunicorn
