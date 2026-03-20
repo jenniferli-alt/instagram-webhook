@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: instagram-webhook
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn webhook:app --bind 0.0.0.0:10000
